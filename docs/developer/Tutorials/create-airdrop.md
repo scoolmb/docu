@@ -23,7 +23,7 @@ in This Example we will see an example of how to create an airdrop :
 
 ## Prepare the Claim List
 
-Follow the instructions in [Prepare Claim List](https://docs.dropsy.xyz/developer/Tutorials/Prepare-Claim-List) to:
+Follow the instructions in [Prepare Claim List](/developer/Tutorials/prepare-claim-list) to:
 
 - Collect eligible wallets and token amounts
 - Generate the Merkle tree
