@@ -1,0 +1,10 @@
+{
+  "label": "Developers",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "title": "Dropsy Developer Documentation",
+    "description": "Deep technical documentation for builders integrating Dropsy: on-chain accounts, instructions, errors, and examples.",
+    "slug": "/developers"
+  }
+}

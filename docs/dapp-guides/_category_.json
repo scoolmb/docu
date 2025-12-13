@@ -1,0 +1,9 @@
+{
+  "label": "Dapp Guides",
+  "position": 6,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "description": "Learn how to build full dApps using the Dropsy protocol and the JavaScript SDK."
+  }
+}

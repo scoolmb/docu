@@ -1,0 +1,8 @@
+{
+  "label": "Security",
+  "position": 9,
+  "link": {
+    "type": "generated-index",
+    "description": "Security design, audits, and best practices for Dropsy."
+  }
+}
