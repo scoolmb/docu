@@ -50,7 +50,7 @@ This creates a dynamic reward system where active and committed community member
 
 ## 📊 Mint Info
 
-- **Total Supply:** 599
+- **Total Supply:** 400
 - **Mint Price:** Free
 - **Minted On:** Solana
 - **Mint Site:** [Mint Here](https://launchmynft.io/sol/20578)
