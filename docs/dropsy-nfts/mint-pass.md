@@ -53,9 +53,61 @@ This creates a dynamic reward system where active and committed community member
 - **Total Supply:** 400
 - **Mint Price:** Free
 - **Minted On:** Solana
-- **Mint Site:** [Mint Here](https://launchmynft.io/sol/20578)
+- **Mint Status:** ✅ Fully Minted
 
----
+The Dropsy Mint Pass is now available exclusively on secondary markets:
+
+Magic Eden Marketplace : Buy on [**Magic Eden**](https://magiceden.io/marketplace/dropsy_mint_pass)
+
+Tensor Marketplace : Buy on [**Tensor**](https://www.tensor.trade/trade/dropsy_mint_pass)
+
+## 💸 Royalties Distribution
+
+Royalties generated from secondary market trading of the Dropsy Mint Pass are allocated transparently to support the ecosystem, the community, and long-term sustainability.
+
+Royalties Breakdown
+
+### • 🟣 40% Buybacks & Community Contests
+
+Used to:
+
+- Run trading & community contests
+
+- Perform buybacks to support NFT liquidity and floor stability
+
+### • 🟣 30% Team
+
+Supports:
+
+- Ongoing development
+
+- Maintenance and protocol upgrades
+
+- Long-term commitment to the project
+
+### • 🟣 30% Services & Infrastructure
+
+Covers operational costs such as:
+
+- X (Twitter) growth & tooling
+
+- Hosting & infrastructure
+
+- Third-party APIs
+
+- RPC providers and backend services
+
+### • Community-First Approach
+
+Royalties are not treated as passive revenue, but as a tool to:
+
+- Reward active holders and traders
+
+- Sustain protocol operations
+
+- Ensure Dropsy can scale responsibly over time
+
+Any major changes to royalty usage will be communicated transparently and, in the future, may be subject to governance decisions.
 
 ## 🚀 Long-Term Support
 
