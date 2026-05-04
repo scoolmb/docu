@@ -113,25 +113,3 @@ Top 3 players win:
 3rd Place: 800 Diamonds
 
 Total Weekly Trivia Rewards: 4,000 Diamonds
-
-## **Farming Boost Tiers**
-
-Farming Boost Tiers reward active community members with higher Diamond earnings. Each tier requires both the minimum [Mint Pass NFTs](/dropsy-nfts/mint-pass) and the corresponding Discord role in the same path, holding only one is not enough. Higher tiers provide bigger boosts, helping users maximize their future $DROPSY token allocation.
-
-| **Tier**       | **Diamond Boost** | **Minimum NFT Requirement** | **Minimum Discord Role** |
-| -------------- | ----------------- | --------------------------- | ------------------------ |
-| **Starter**    | 10%               | 0 NFTs                      | Verified Role            |
-| **Early**      | 20%               | 0 NFTs                      | Verified Role            |
-| **OG**         | 50%               | 0 NFTs                      | Verified Role            |
-| **Ambassador** | 75%               | 1 NFT                       | Early-Bird Role          |
-| **Elite**      | 100%              | 2 NFTs                      | OG Role                  |
-
-## 🔮 What Happens After Season 1?
-
-Once the $DROPSY token is launched:
-
-- Diamonds will convert into your token allocation.
-- Season 2 farming will begin with on-chain reward emissions.
-- Early participants gain a stronger position in future seasons.
-
----

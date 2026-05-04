@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://dropsy.xyz/',
+  url: 'https://dropsy.org/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -87,12 +87,12 @@ const config: Config = {
       },
 
       items: [
-        {
+        /*{
           to: 'https://app.dropsy.xyz',
           label: 'Launch App',
           position: 'right',
           className: 'navbar-launch-app',  // custom class for styling
-        },
+        },*/
       ],
     },
     footer: {

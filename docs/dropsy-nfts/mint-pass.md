@@ -65,7 +65,7 @@ Tensor Marketplace : Buy on [**Tensor**](https://www.tensor.trade/trade/dropsy_m
 
 Royalties generated from secondary market trading of the Dropsy Mint Pass are allocated transparently to support the ecosystem, the community, and long-term sustainability.
 
-Royalties Breakdown
+Royalties Breakdown :
 
 ### • 🟣 40% Buybacks & Community Contests
 
