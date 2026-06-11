@@ -23,6 +23,7 @@ The **AirdropMaster PDA** is derived using the following seeds:
 - `airdrop` → constant seed identifying the airdrop namespace
 - `authority` → the wallet (or program) that owns & manages the airdrop
 - `mint` → the mint address (airdropped token)
+- `id` → a unique identifier that enables multiple airdrops to be created by the same authority for the same token mint, improving flexibility and scalability
 
 ### Derive Airdrop Pda Example
 
@@ -40,42 +41,39 @@ type Seed = ReadonlyUint8Array | string;
 
 export async function getAirdropDerivedAddress(
   authority: Address,
-  mint: Address
+  mint: Address,
+  id?: number,
 ): Promise<DropsyPda> {
   const seeds = [
-    Buffer.from("airdrop"),
-    getAddressEncoder().encode(mint),
+    AIRDROP_SEED,
     getAddressEncoder().encode(authority),
+    getAddressEncoder().encode(mint),
+    getU64Encoder().encode(id ?? 0),
   ];
-  return await getProgramDerivedAddress({
-    seeds,
-    programAddress: DROPSY_PROGRAM_ADDRESS,
-  });
+  return await getDropsyDerivedAddress(seeds);
 }
 ```
 
 ## 🧱 Account Structure
 
-| **Field**             | **Type**             | **Description**                                                   |
-| --------------------- | -------------------- | ----------------------------------------------------------------- |
-| `discriminator`       | `ReadonlyUint8Array` | Anchor 8-byte account discriminator.                              |
-| `master`              | `Address`            | Parent AirdropMaster PDA.                                         |
-| `authority`           | `Address`            | Wallet allowed to update/close this airdrop.                      |
-| `mint`                | `Address`            | Token mint being distributed.                                     |
-| `delegateAuthority`   | `Address`            | Optional delegated authority for claim map operations.            |
-| `presale`             | `Address`            | Address used for presale or restricted access logic.              |
-| `merkleRoot`          | `ReadonlyUint8Array` | Merkle root for WL / eligibility validation.                      |
-| `supply`              | `bigint`             | Total token supply allocated to this airdrop.                     |
-| `boost`               | `bigint`             | Boost multiplier applied for boosted claim mechanics.             |
-| `startsAt`            | `bigint`             | Unix timestamp for when the airdrop becomes claimable.            |
-| `endsAt`              | `bigint`             | Unix timestamp when the airdrop ends (claims disabled).           |
-| `bitmapCount`         | `number`             | Number of Bitmap (claim maps) created under this airdrop.         |
-| `delegatePermissions` | `number`             | Bitmask defining what permissions delegates have.                 |
-| `mutable`             | `number`             | Whether this airdrop can be updated (0 = immutable, 1 = mutable). |
-| `state`               | `number`             | Current airdrop state (Active, Closed, Drained, etc.).            |
-| `version`             | `number`             | Version of the Airdrop layout.                                    |
-| `bump`                | `number`             | PDA bump seed.                                                    |
-| `padding`             | `ReadonlyUint8Array` | Reserved space for future upgrades.                               |
+| **Field**           | **Type**             | **Description**                                                                                        |
+| ------------------- | -------------------- | ------------------------------------------------------------------------------------------------------ |
+| `discriminator`     | `ReadonlyUint8Array` | Anchor account identifier (8 bytes).                                                                   |
+| `master`            | `Address`            | Reference to the AirdropMaster account that manages protocol-level settings and fees.                  |
+| `authority`         | `Address`            | Wallet authorized to manage and update the airdrop.                                                    |
+| `mint`              | `Address`            | Token mint being distributed through the airdrop.                                                      |
+| `delegateAuthority` | `Address`            | Optional delegated authority allowed to perform claim-related actions on behalf of the authority.      |
+| `merkleRoot`        | `ReadonlyUint8Array` | Merkle root used to verify eligible claimants and claim allocations.                                   |
+| `id`                | `bigint`             | Unique identifier used in PDA derivation to support multiple airdrops for the same authority and mint. |
+| `supply`            | `bigint`             | Total amount of tokens allocated to the airdrop.                                                       |
+| `boost`             | `bigint`             | Boost value applied to the airdrop for rewards, points, or protocol-specific incentive calculations.   |
+| `startsAt`          | `bigint`             | Unix timestamp indicating when claiming becomes available.                                             |
+| `endsAt`            | `bigint`             | Unix timestamp indicating when the airdrop expires and claiming ends.                                  |
+| `bitmapCount`       | `number`             | Number of Bitmap accounts associated with this airdrop for claim tracking.                             |
+| `state`             | `number`             | Current lifecycle state of the airdrop (e.g. Active, Paused, Closed).                                  |
+| `version`           | `number`             | Account version used for upgrades and backward compatibility.                                          |
+| `bump`              | `number`             | PDA bump used to derive the Airdrop account.                                                           |
+| `padding`           | `ReadonlyUint8Array` | Reserved bytes used for account alignment and future upgrades.                                         |
 
 ## 📥 Fetch Airdrop Account
 

@@ -42,7 +42,7 @@ export type DropsyPda = readonly [Address<string>, ProgramDerivedAddressBump];
 type Seed = ReadonlyUint8Array | string;
 
 export async function getAirdropMasterDerivedAddress(
-  authority: Address
+  authority: Address,
 ): Promise<DropsyPda> {
   const seeds = [
     Buffer.from("airdrop_master"),
@@ -57,26 +57,23 @@ export async function getAirdropMasterDerivedAddress(
 
 ## 🧱 Account Structure
 
-| **Field**            | **Type**             | **Description**                                                               |
-| -------------------- | -------------------- | ----------------------------------------------------------------------------- |
-| `discriminator`      | `ReadonlyUint8Array` | Anchor account identifier (8 bytes).                                          |
-| `affiliateMaster`    | `Address`            | Pointer to the global Affiliate Master account used verify the Affiliates.    |
-| `authority`          | `Address`            | Main authority allowed to configure or manage the AirdropMaster.              |
-| `merkleRoot`         | `ReadonlyUint8Array` | Merkle root used for Limited Access (WL) verification or authorization logic. |
-| `airdropsCreated`    | `bigint`             | Number of airdrop created with this master.                                   |
-| `maxAirdropsAllowed` | `bigint`             | Maximum allowed number of airdrops to use this master.                        |
-| `bitmapCreated`      | `bigint`             | Number of bitmaps created (claim maps).                                       |
-| `maxBitmapAllowed`   | `bigint`             | Maximum allowed number of bitmaps to use this master.                         |
-| `airdropCreationFee` | `bigint`             | Fee required to create an airdrop.                                            |
-| `airdropUpdateFee`   | `bigint`             | Fee required to update an existing airdrop.                                   |
-| `airdropCloseFee`    | `bigint`             | Fee required to close an airdrop.                                             |
-| `airdropClaimFee`    | `bigint`             | Fee charged during a claim.                                                   |
-| `airdropDelegateFee` | `bigint`             | Fee for delegating claim authority.                                           |
-| `airdropDepositFee`  | `bigint`             | Fee for depositing additional tokens into an airdrop.                         |
-| `bitmapCreationFee`  | `bigint`             | Fee required to create a Bitmap (claim map).                                  |
-| `bitmapCloseFee`     | `bigint`             | Fee required to close a Bitmap.                                               |
-| `bump`               | `number`             | PDA bump for AirdropMaster.                                                   |
-| `padding`            | `ReadonlyUint8Array` | Space reserved for padding.                                                   |
+| **Field**            | **Type**             | **Description**                                                             |
+| -------------------- | -------------------- | --------------------------------------------------------------------------- |
+| `discriminator`      | `ReadonlyUint8Array` | Anchor account identifier (8 bytes).                                        |
+| `creator`            | `Address`            | Wallet that originally created the AirdropMaster account.                   |
+| `authority`          | `Address`            | Main authority allowed to configure and manage the AirdropMaster.           |
+| `treasury`           | `Address`            | Treasury wallet that receives protocol fees collected by the AirdropMaster. |
+| `createdAirdrops`    | `bigint`             | Total number of airdrops created through this AirdropMaster.                |
+| `points`             | `bigint`             | Accumulated points associated with the AirdropMaster activity.              |
+| `totalClaimCount`    | `bigint`             | Total number of successful claims processed across all managed airdrops.    |
+| `airdropUpdateFee`   | `bigint`             | Fee required to update an existing airdrop.                                 |
+| `airdropCreationFee` | `bigint`             | Fee required to create a new airdrop.                                       |
+| `airdropClaimFee`    | `bigint`             | Fee charged when a user claims tokens from an airdrop.                      |
+| `airdropDelegateFee` | `bigint`             | Fee required to delegate airdrop authority.                                 |
+| `bitmapCreationFee`  | `bigint`             | Fee required to create a Bitmap account for claim tracking.                 |
+| `bump`               | `number`             | PDA bump used to derive the AirdropMaster account.                          |
+| `padding`            | `ReadonlyUint8Array` | Reserved bytes used for account alignment and future upgrades.              |
+|                      |
 
 ## 📥 Fetch Airdrop Master Account
 
