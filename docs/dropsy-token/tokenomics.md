@@ -9,26 +9,27 @@ This page covers the full breakdown of the **$DROPSY token supply**, emissions, 
 
 ---
 
-## 🪙 Total Supply
+## 🪙 Token and Supply
 
-**$DROPSY** will have a max supply 1,000,000,000 $DROPSY (1B)
+CA:dropSzfiqaLQvuyw5H1Cci42Sxx5WaKNm9RvvjJtwsF
 
----
+**$DROPSY** will have a max supply 1,000,000,000 (1B) $DROPSY
 
-## 📦 Allocations
+## 📦 Allocations and Vesting
 
-| Category                | Percentage | Amount | Description                                                                                                                |
-| ----------------------- | ---------- | ------ | -------------------------------------------------------------------------------------------------------------------------- |
-| Community               | 40%        | 400M   | Distributed to early users, loyal community members, and participants. Supports long-term engagement and ecosystem growth. |
-| Liquidity               | 20%        | 200M   | Initial liquidity for DEX/CEX to ensure market stability and healthy trading.                                              |
-| Partnership & Ecosystem | 12%        | 120M   | Strategic collaborations, ecosystem incentives, and community-driven programs.                                             |
-| Team                    | 10%        | 100M   | Core contributors with long-term vesting to align with protocol growth and security.                                       |
-| NFT-Swap                | 5%         | 50M    | Hybrid liquidity and NFT-related utility mechanics.                                                                        |
-| Development & Security  | 5%         | 50M    | Ongoing protocol development, upgrades, and security initiatives.                                                          |
-| Advisors                | 3%         | 30M    | Strategic advisors and partners providing guidance and expertise.                                                          |
-| Reserve                 | 5%         | 50M    | Community-first reserve for future protocol initiatives, buybacks, and emergency support.                                  |
+| Category                | Percentage |   Amount |  Vesting   | Description                                                                                                      |
+| ----------------------- | ---------: | -------: | :--------: | ---------------------------------------------------------------------------------------------------------------- |
+| Community               |    **40%** | **400M** |  ✅Vested  | Distributed to early users, loyal community members, and ecosystem participants to support long-term engagement. |
+| Liquidity               |    **30%** | **300M** | ❌Unlocked | Initial circulating supply and liquidity to ensure healthy trading and market stability after launch.            |
+| Partnership & Ecosystem |    **10%** | **100M** |  ✅Vested  | Strategic partnerships, ecosystem incentives, grants, and protocol integrations.                                 |
+| Team                    |    **10%** | **100M** |  ✅Vested  | Core contributors with long-term vesting aligned with the protocol's sustainable growth.                         |
+| Development & Security  |     **5%** |  **50M** |  ✅Vested  | Protocol development, infrastructure, audits, and ongoing security improvements.                                 |
+| Reserve                 |     **5%** |  **50M** |  ✅Vested  | Treasury reserve for future protocol initiatives, governance decisions, and strategic opportunities.             |
 
----
+:::warning
+Dropsy launches through the Meteora Dynamic Bonding Curve (DBC), ensuring a fair and transparent token distribution. Upon bondout, 30% of the total token supply becomes the initial circulating liquidity, while **the remaining 70% is vested over 4 years with a 2-month cliff after bondout.** This vesting model aligns all stakeholders with the protocol's long-term success, promotes sustainable ecosystem growth, and minimizes long-term sell pressure.
+
+:::
 
 ## 🔥 Emissions
 

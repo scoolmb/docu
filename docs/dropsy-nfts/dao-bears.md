@@ -59,15 +59,7 @@ Each DAO Bear represents governance weight in future Dropsy DAO decisions:
 - Treasury usage
 - Ecosystem expansions
 
-### **2. Hybrid MPL Token Swapping**
-
-DAO Bears are built using **MPL Hybrid Mechanics**, meaning:
-
-- Each DAO Bear can be **swapped into 12500 [$Dropsy](/dropsy-token/overview) tokens**
-- Holders can later swap **$Dropsy back into a DAO Bear** (if supply remains)
-- This ensures long‑term value, liquidity, and flexibility
-
-### **3. Rewards & Holder Benefits**
+### **2. Rewards & Holder Benefits**
 
 Active holders receive:
 
@@ -75,7 +67,7 @@ Active holders receive:
 - Early eligibility for partnerships and collaborations
 - Priority access during future protocol expansions
 
-### **4. Ecosystem Access**
+### **3. Ecosystem Access**
 
 DAO Bear holders unlock:
 
@@ -89,7 +81,7 @@ DAO Bear holders unlock:
 
 - **Total Supply:** 3,999
 - **Mint Chain:** Solana
-- **Mint Price:** Free for whitelisted users & [Mint Pass](/dropsy-nfts/mint-pass) holders (snapshot details will be announced)
+- **Mint Price:** Free for whitelisted users & [Mint Pass](/dropsy-nfts/mint-pass) holders (snapshot details : TBA)
 - **Public Mint:** TBA
 
 ---

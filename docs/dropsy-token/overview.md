@@ -8,7 +8,13 @@ sidebar_position: 1
 ## Overview
 
 More than just a token, **$DROPSY forms the foundation of a scalable distribution layer on Solana**.  
-It aligns incentives between **creators**, **airdrop participants**, **community members**, **NFT holders**, **affiliates**, and the **protocol** itself.
+It aligns incentives between **contributors**, **creators**, **holders**, **active community members**, and the **protocol** itself.
+
+:::tip
+check on [jupiter](https://jup.ag/tokens/dropSzfiqaLQvuyw5H1Cci42Sxx5WaKNm9RvvjJtwsF?ref=5qiwnaoik3nf) for the most accurate data
+solana:dropSzfiqaLQvuyw5H1Cci42Sxx5WaKNm9RvvjJtwsF
+
+:::
 
 ---
 
@@ -33,15 +39,13 @@ This creates a **self-reinforcing loop** between distribution, participation, co
 $DROPSY can be used to:
 
 - **Boost airdrops**
+- **Unlock exclusive perks**
 - **Upgrade affiliate levels** for better earning potential
 - Additional features will **roll out over time** as the protocol evolves
 
-### 2. Utility-Driven & Hybrid Mechanics
+---
 
-$DROPSY is at the core of the ecosystem, creating sustainable demand.  
-It can also be **swapped with DAO Bears**, unlocking hybrid liquidity and long-term value.
-
-### 3. Rewards, Buybacks & Long-Term Governance
+### 2. Rewards, Buybacks & Long-Term Governance
 
 $DROPSY powers the ecosystem through:
 
@@ -53,6 +57,7 @@ $DROPSY powers the ecosystem through:
 ---
 
 :::tip
+
 Holding $DROPSY and DAO Bears together unlocks hybrid protocol benefits.
 :::
 
