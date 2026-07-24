@@ -13,7 +13,7 @@ This page covers the full breakdown of the **$DROPSY token supply**, emissions, 
 
 CA:dropSzfiqaLQvuyw5H1Cci42Sxx5WaKNm9RvvjJtwsF
 
-**$DROPSY** will have a max supply 1,000,000,000 (1B) $DROPSY
+**$DROPSY** max supply is 1,000,000,000 (1B) $DROPSY
 
 ## 📦 Allocations and Vesting
 
