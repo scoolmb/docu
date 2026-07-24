@@ -17,14 +17,14 @@ CA:dropSzfiqaLQvuyw5H1Cci42Sxx5WaKNm9RvvjJtwsF
 
 ## 📦 Allocations and Vesting
 
-| Category                | Percentage |   Amount |  Vesting   | Description                                                                                                      |
-| ----------------------- | ---------: | -------: | :--------: | ---------------------------------------------------------------------------------------------------------------- |
-| Community               |    **40%** | **400M** |  ✅Vested  | Distributed to early users, loyal community members, and ecosystem participants to support long-term engagement. |
-| Liquidity               |    **30%** | **300M** | ❌Unlocked | Initial circulating supply and liquidity to ensure healthy trading and market stability after launch.            |
-| Partnership & Ecosystem |    **10%** | **100M** |  ✅Vested  | Strategic partnerships, ecosystem incentives, grants, and protocol integrations.                                 |
-| Team                    |    **10%** | **100M** |  ✅Vested  | Core contributors with long-term vesting aligned with the protocol's sustainable growth.                         |
-| Development & Security  |     **5%** |  **50M** |  ✅Vested  | Protocol development, infrastructure, audits, and ongoing security improvements.                                 |
-| Reserve                 |     **5%** |  **50M** |  ✅Vested  | Treasury reserve for future protocol initiatives, governance decisions, and strategic opportunities.             |
+| Category                | Percentage |   Amount |  Vesting   | Description                                                                                                          |
+| ----------------------- | ---------: | -------: | :--------: | -------------------------------------------------------------------------------------------------------------------- |
+| Community               |    **40%** | **400M** |  ✅Vested  | Distributed loyal community members, active contributors and ecosystem participants to support long-term engagement. |
+| Liquidity               |    **30%** | **300M** | ❌Unlocked | Bonding curve and initial liquidity                                                                                  |
+| Partnership & Ecosystem |    **10%** | **100M** |  ✅Vested  | Strategic partnerships, ecosystem incentives, grants, and protocol integrations.                                     |
+| Team                    |    **10%** | **100M** |  ✅Vested  | Core contributors with long-term vesting aligned with the protocol's sustainable growth.                             |
+| Development & Security  |     **5%** |  **50M** |  ✅Vested  | Protocol development, infrastructure, audits, and ongoing security improvements.                                     |
+| Reserve                 |     **5%** |  **50M** |  ✅Vested  | Treasury reserve for future protocol initiatives, governance decisions, and strategic opportunities.                 |
 
 :::warning
 Dropsy launches through the Meteora Dynamic Bonding Curve (DBC), ensuring a fair and transparent token distribution. Upon bondout, 30% of the total token supply becomes the initial circulating liquidity, while **the remaining 70% is vested over 4 years with a 2-month cliff after bondout.** This vesting model aligns all stakeholders with the protocol's long-term success, promotes sustainable ecosystem growth, and minimizes long-term sell pressure.
