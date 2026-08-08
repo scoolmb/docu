@@ -38,6 +38,23 @@ Where:
 
 Each bitmap typically covers **8,192 claim slots** (or the size defined in program constants).
 
+## Account data
+
+```ts
+type BitmapAccount = {
+  discriminator: bytes;
+  authority: Address;
+  airdrop: Address;
+  total: number /* u32 */;
+  claimedBitmap: bytes;
+  id: number /* u16 */;
+  version: number /* u8 */;
+  bump: number /* u8 */;
+};
+```
+
+This account has a fixed size of 1080 bytes.
+
 ### Derive Claim Map Pda Example
 
 ```ts
@@ -54,7 +71,7 @@ type Seed = ReadonlyUint8Array | string;
 
 export async function getClaimMapDerivedAddress(
   airdrop: Address,
-  id: number
+  id: number,
 ): Promise<DropsyPda> {
   const seeds = [
     Buffer.from("bitmap"),
